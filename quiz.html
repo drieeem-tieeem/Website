@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+
+  <title>PD Pal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="calendar.html"><img src="./calendar.png" stlye="width:42px;height:42px;border:0;"/></a></li>
+    <li><a href="pill.html"><img src="./pill.png" stlye="width:42px;height:42px;border:0;"/></a></li>
+    <li><a href="quiz.html"><img src="./quiz.png" stlye="width:42px;height:42px;border:0;"/></a></li>
+    <li><a href="settings.html"><img src="./settings.png" stlye="width:42px;height:42px;border:0;"/></a></li>
+  </ul>
+
+  <div class="grid">
+
+    <div class="grid-one">
+      <p>Rate the intensity of tremors you have experienced in the past seven days</p>
+      <div class="slidecontainer">
+      <input type="range" min="0" max="10" value="5" class="slider" id="tremorRange">
+      <p>Intensity: <span id="tremors"></span></p>
+    </div>
+    <script>
+    var slider = document.getElementById("tremorRange");
+    var output1 = document.getElementById("tremors");
+    output1.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output1.innerHTML = this.value;
+    }
+    </script>
+    </div>
+
+    <div class="grid-two">
+      <p>Rate the rigidity of your muscles in the past seven days</p>
+      <div class="slidecontainer">
+      <input type="range" min="0" max="10" value="5" class="slider" id="rigidityRange">
+      <p>Rigidity: <span id="rigidity"></span></p>
+    </div>
+    <script>
+    var slider = document.getElementById("rigidityRange");
+    var output2 = document.getElementById("rigidity");
+    output2.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output2.innerHTML = this.value;
+    }
+    </script>
+    </div>
+    <div class="grid-three">
+      <p>Rate how slowed your movement has felt in the last seven days</p>
+      <div class="slidecontainer">
+      <input type="range" min="0" max="10" value="5" class="slider" id="movementRange">
+      <p>Slowed Movement: <span id="movement"></span></p>
+    </div>
+    <script>
+    var slider = document.getElementById("movementRange");
+    var output3 = document.getElementById("movement");
+    output3.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output3.innerHTML = this.value;
+    }
+    </script>
+    </div>
+
+    <div class="grid-four">
+      <p>Rate your sense of balance in the last seven days</p>
+      <div class="slidecontainer">
+      <input type="range" min="0" max="10" value="5" class="slider" id="balanceRange">
+      <p>Balance: <span id="balance"></span></p>
+    </div>
+    <script>
+    var slider = document.getElementById("balanceRange");
+    var output4 = document.getElementById("balance");
+    output4.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output4.innerHTML = this.value;
+    }
+    </script>
+    </div>
+
+    <div class="grid-five">
+      <p>Rate how you felt your speech has been impeded in the last seven days</p>
+      <div class="slidecontainer">
+      <input type="range" min="0" max="10" value="5" class="slider" id="speechRange">
+      <p>Speech Impedence: <span id="speech"></span></p>
+    </div>
+    <script>
+    var slider = document.getElementById("speechRange");
+    var output5 = document.getElementById("speech");
+    output5.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output5.innerHTML = this.value;
+    }
+    </script>
+    </div>
+
+    <div class="grid-six">
+      <p>Rate your overall (sitting + standing) posture in the last seven days</p>
+      <div class="slidecontainer">
+      <input type="range" min="0" max="10" value="5" class="slider" id="postureRange">
+      <p>Posture: <span id="posture"></span></p>
+    </div>
+    <script>
+    var slider = document.getElementById("postureRange");
+    var output6 = document.getElementById("posture");
+    output6.innerHTML = slider.value;
+
+    slider.oninput = function() {
+    output6.innerHTML = this.value;
+    }
+    </script>
+    </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
