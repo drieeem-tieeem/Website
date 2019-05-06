@@ -183,9 +183,23 @@ p {
 
 .grid-item {
   background-color: white;
-  padding: 20px;
-  font-size: 30px;
-  text-align: center;
+  margin: 5px;
+  float: center;
+  align-content: right;
+  min-height: 20px;
+  min-width: 100px;
+}
+
+.new-pill {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: auto;
+  left: 2.5%;
+  width: 95%;
+  height: 10%;
+  position: fixed;
+  top: 85vh;
+  background-color: powderblue;
 }
 
 /* pills legend */
@@ -212,5 +226,6 @@ p {
 .pilllegend {
   color: white;
   font-size: 17px;
+  float: right;
   text-align: right; 
 }

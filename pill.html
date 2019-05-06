@@ -2,28 +2,48 @@
 <html>
 <head>
 
+<style>
+</style>
+
   <meta charset="utf-8">
 
   <title>PD Pal</title>
+  <link rel="stylesheet" href="node_modules/dragula/dist/dragula.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/draganddrop.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
-
 <body>
 
+   
   <ul>
-    <li><a href="calendar.html"><img src="./calendar.png" stlye="width:42px;height:42px;border:0;"/></a></li>
-    <li><a href="pill.html"><img src="./pill.png" stlye="width:42px;height:42px;border:0;"/></a></li>
-    <li><a href="quiz.html"><img src="./quiz.png" stlye="width:42px;height:42px;border:0;"/></a></li>
-    <li><a href="settings.html"><img src="./settings.png" stlye="width:42px;height:42px;border:0;"/></a></li>
+    <li><a href="calendar.html"><img src="icons/calendar.png"/></a></li>
+    <li><a href="pill.html"><img src="icons/pill.png"/></a></li>
+    <li><a href="quiz.html"><img src="icons/quiz.png"/></a></li>
+    <li><a href="settings.html"><img src="icons/settings.png"/></a></li>
   </ul>
 
+  
   <h3> YOUR PILLBOX ! </h3>
   <h4> ★ next dosage: </h4>
 
   <div class="grid-container">
   <div class="grid-item">
+    <img src="icons/pill.png" class="image movable">
+	<img src="icons/pill.png" class="image movable">
+    <p> </p>
+  </div>
+  <div class="grid-item">
+  <img src="icons/pill.png" class="image movable">
+    <p> </p>
+  </div>
+  <div class="grid-item">
+  <img src="icons/pill.png" class="image movable">
+    <p> </p>
+  </div>
+  <div class="grid-item">
+  <img src="icons/pill.png" class="image movable">
     <p> </p>
   </div>
   <div class="grid-item">
@@ -33,44 +53,52 @@
     <p> </p>
   </div>
   <div class="grid-item">
+      <img src="icons/pill.png" class="image movable" >
+	<img src="icons/pill.png" class="image movable">
     <p> </p>
+	
   </div>
-  <div class="grid-item">
-    <p> </p>
-  </div>
-  <div class="grid-item">
-    <p> </p>
-  </div>
-  <div class="grid-item">
-    <p> </p>
+    <script src="javascript/dragula.js"></script>
+<script src="javascript/draganddrop.js"></script>
+
+
+     <div class="new-pill">
+    <p class="pilllegend">
+      <img src="images/newpill.png" style ="align: right">
+      New Pill
+    </p>
   </div>
 
+
+<!--
   <div class="pill-container">
-  <div class="grid-content">1
+  <div class="grid-content">
     <p> </p>
   </div>
-  <div class="grid-content">2
+  <div class="grid-content">
     <p> </p>
   </div>
-  <div class="grid-content">3
+  <div class="grid-content">
     <p> </p>
   </div>
   <div class="grid-content">
     <p class="pilllegend">
-      <img src="./newpill.png" style ="align: right">
+      <img src="images/newpill.png" style ="align: right">
       New Pill
     </p>
   </div>
-  <div class="grid-content">5
+  <div class="grid-content">
     <p> </p>
   </div>
-  <div class="grid-content">6
+  <div class="grid-content">
     <p> </p>
   </div>
-  <div class="grid-content">7
+  <div class="grid-content">
     <p> </p>
   </div>
-</div>
+</div
+<!--
+//-->
 
 
 
