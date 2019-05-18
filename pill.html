@@ -1,28 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script>
-  $(function() {
 
-    // contact form animations
-    $('#contact').click(function() {
-      $('#contactForm').fadeToggle();
-    })
-    $(document).mouseup(function (e) {
-      var container = $("#contactForm");
-
-      if (!container.is(e.target) // if the target of the click isn't the container...
-          && container.has(e.target).length === 0) // ... nor a descendant of the container
-      {
-          container.fadeOut();
-      }
-    });
-
-  });
-  </script>
-
-<style>
-</style>
+<script type="text/javascript" src="javascript/newpill.js"></script>
 
   <meta charset="utf-8">
 
@@ -101,26 +81,24 @@
 
   </div>
   <div class="grid-content">
-    <div class="grid-content">
-      <div id="contact">
-        <img src="images/newpill.png" style ="align: right">
-        New Pill
-      </div>
+    <div id="contact">
+      <img src="images/newpill.png" style ="align: right">
+      New Pill
+    </div>
 
-      <div id="contactForm">
+    <div id="contactForm">
 
-        <h1>Add New Pill</h1>
-        <small>I'll get back to you as quickly as possible</small>
+      <h1>Add New Pill</h1>
+      <small>I'll get back to you as quickly as possible</small>
 
-        <form action="#">
-          <input placeholder="Name" type="text" required />
-          <input placeholder="Email" type="email" required />
-          <input placeholder="Subject" type="text" required />
-          <textarea placeholder="Comment"></textarea>
-          <input class="formBtn" type="submit" />
-          <input class="formBtn" type="reset" />
-        </form>
-      </div>
+      <form action="#">
+        <input placeholder="Name" type="text" required />
+        <input placeholder="Email" type="email" required />
+        <input placeholder="Subject" type="text" required />
+        <textarea placeholder="Comment"></textarea>
+        <input class="formBtn" type="submit" />
+        <input class="formBtn" type="reset" />
+      </form>
     </div>
   </div>
   <div class="grid-content">

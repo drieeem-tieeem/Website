@@ -20,20 +20,27 @@
   </ul>
 
   <div class="grid">
-
+    <form>
     <div class="grid-one">
-      <p>Rate the intensity of tremors you have experienced in the past seven days</p>
-      <div class="slidecontainer">
-      <input type="range" min="0" max="10" value="5" class="slider" id="tremorRange">
-      <p>Intensity: <span id="tremors"></span></p>
-    </div>
+
+        <p>Rate the intensity of tremors you have experienced in the past seven days</p>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="10" value="5" class="slider" id="tremorRange">
+          <p>
+            Intensity: <span id="tremors"></span>
+          </p>
+        </div>
     <script>
     var slider = document.getElementById("tremorRange");
     var output1 = document.getElementById("tremors");
     output1.innerHTML = slider.value;
 
     slider.oninput = function() {
-    output1.innerHTML = this.value;
+      output1.innerHTML = this.value;
+    }
+
+    slider.onmouseup = function () {
+      document.getElementById("form").submit();
     }
     </script>
     </div>
@@ -121,7 +128,9 @@
     }
     </script>
     </div>
-    </div>
+
+      <input type="submit" name="send">
+    </form>
 
   </div>
 

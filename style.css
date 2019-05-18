@@ -112,6 +112,7 @@ h6 {
 
 }
 
+
 p {
   color: powderblue;
   font-weight: bold;
@@ -172,6 +173,21 @@ p {
   padding: 7px;
 
 }
+
+input[type=submit]{
+  background-color: white;
+  border: none;
+  color: powderblue;
+  font-weight: bolder;
+  left: 44.7%;
+  position: fixed;
+  top: 80vh;
+  width: 12%;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  height: 5%;
+}
+
 
 /* pill box containers */
 
