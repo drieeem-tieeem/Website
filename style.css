@@ -47,7 +47,7 @@ h3 {
   font-weight: bolder;
   color: white;
   position: fixed;
-  top: 20vh;
+  top: 18vh;
   left: 2.5%;
   letter-spacing: 20px;
 }
@@ -57,9 +57,15 @@ h4 {
   font-weight: bold;
   color: white;
   position: fixed;
-  top: 25vh;
+  top: 22vh;
   left: 2.5%;
   font-size: 15px;
+}
+
+h6 {
+  font-weight: bolder;
+  color: white;
+  letter-spacing: 5px;
 }
 
 /* quiz page */
@@ -177,20 +183,20 @@ p {
   width: 95%;
   height: 50%;
   position: fixed;
-  top: 30vh;
+  top: 27vh;
   background-color: powderblue;
 }
 
 .grid-item {
   background-color: white;
-  margin: 5px;
-  float: center;
-  align-content: right;
+  /* margin: 5px; */
+  /* float: center;
+  align-content: right; */
   min-height: 20px;
   min-width: 100px;
 }
 
-.new-pill {
+/* .new-pill {
   display: grid;
   grid-column-gap: 5px;
   grid-template-columns: auto;
@@ -200,7 +206,7 @@ p {
   position: fixed;
   top: 85vh;
   background-color: powderblue;
-}
+} */
 
 /* pills legend */
 
@@ -212,7 +218,7 @@ p {
   width: 95%;
   height: 10%;
   position: fixed;
-  top: 85vh;
+  top: 72vh;
   background-color: powderblue;
 }
 
@@ -220,14 +226,14 @@ p {
   background-color: transparent;
   padding: 10px;
   font-size: 15px;
-  text-align: left;
+  /* text-align: left; */
 }
 
 .pilllegend {
   color: white;
   font-size: 17px;
-  float: right;
-  text-align: right;
+  /* float: left; */
+  text-align: left;
 }
 
 /* new pill popup */
