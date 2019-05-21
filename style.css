@@ -68,6 +68,19 @@ h6 {
   letter-spacing: 5px;
 }
 
+
+p {
+  color: powderblue;
+  font-weight: bold;
+  text-align: center;
+}
+
+p.timelabel {
+  color: powderblue;
+  font-size: 11px;
+}
+
+
 /* quiz page */
 
 .slider {
@@ -110,13 +123,6 @@ h6 {
   left: 2.5%;
   padding: 7px;
 
-}
-
-
-p {
-  color: powderblue;
-  font-weight: bold;
-  text-align: center;
 }
 
 .grid-two {
@@ -194,10 +200,10 @@ input[type=submit]{
 .grid-container {
   display: grid;
   grid-column-gap: 10px;
-  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-template-columns: 13.65% 13.65% 13.65% 13.65% 13.65% 13.65% 13.65%;
   left: 2.5%;
   width: 95%;
-  height: 50%;
+  height: 25.5%;
   position: fixed;
   top: 27vh;
   background-color: powderblue;
@@ -206,11 +212,27 @@ input[type=submit]{
 .grid-item {
   background-color: white;
   /* margin: 5px; */
-  /* float: center;
-  align-content: right; */
-  min-height: 20px;
-  min-width: 100px;
+  /* align-content: left; */
+  -height: 20px;
 }
+
+/* place pills next to each other  */
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+   width: 50%;
+}
+
+.row {
+  width: 100%;
+}
+
+/* Clear floats after image containers */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
 
 /* .new-pill {
   display: grid;
@@ -234,13 +256,12 @@ input[type=submit]{
   width: 95%;
   height: 10%;
   position: fixed;
-  top: 72vh;
+  top: 73vh;
   background-color: powderblue;
 }
 
 .grid-content {
   background-color: transparent;
-  padding: 10px;
   font-size: 15px;
   /* text-align: left; */
 }
