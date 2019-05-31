@@ -9,10 +9,12 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: white;
+<<<<<<< HEAD
   position: -webkit-sticky; /* Safari */
+=======
+>>>>>>> 576b38871f85f52fdfbcf0782c42e2a13cd65da1
   position: fixed;
   top: 5vh;
-  z-index: 2;
   width: 95%;
   left: 2.5%;
 }
