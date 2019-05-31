@@ -9,10 +9,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: white;
-<<<<<<< HEAD
   position: -webkit-sticky; /* Safari */
-=======
->>>>>>> 576b38871f85f52fdfbcf0782c42e2a13cd65da1
   position: fixed;
   top: 5vh;
   width: 95%;
@@ -280,14 +277,14 @@ p.timelabel {
 /* new pill popup */
 
 #contactForm body {
-  margin: 5px;
+  margin: 0;
   padding: 0;
   background: #333;
   font-size: 11px;
 
 }
 #contactForm h1{
-  margin: 5px;
+  margin-bottom: 5px;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: white;
@@ -314,7 +311,7 @@ p.timelabel {
 
   padding: 4em;
   width: 400px;
-  height: 450px;
+  height: 540px;
   text-align: center;
   background: #9dd8e0;
   position: fixed;
@@ -373,4 +370,27 @@ textarea { height: 80px; resize: none; }
 
 .select-style select:focus {
     outline: none;
+}
+
+/* pill container + weekly doses selection */
+
+.check-selector input {
+  display: none!important;
+}
+
+.check-selector input[type=checkbox] + label {
+  display: inline-block;
+  border-radius: 6px;
+  background: white;
+  height: 40px;
+  width: 30px;
+  margin-right: 3px;
+  line-height: 40px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.check-selector input[type=checkbox]:checked + label {
+  background: #76c9d4;
+  color: #ffffff;
 }
