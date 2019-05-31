@@ -228,25 +228,6 @@ p.timelabel {
   width: 100%;
 }
 
-/* Clear floats after image containers */
-/* .row::after {
-  content: "";
-  clear: both;
-  display: table;
-} */
-
-/* .new-pill {
-  display: grid;
-  grid-column-gap: 5px;
-  grid-template-columns: auto;
-  left: 2.5%;
-  width: 95%;
-  height: 10%;
-  position: fixed;
-  top: 85vh;
-  background-color: powderblue;
-} */
-
 /* pills legend */
 
 .pill-container {
@@ -275,6 +256,12 @@ p.timelabel {
 }
 
 /* new pill popup */
+
+.newpill {
+  top: 65vh;
+  left: 90%;
+  position: fixed;
+}
 
 #contactForm body {
   margin: 0;
@@ -309,9 +296,9 @@ p.timelabel {
 #contactForm {
   display: none;
 
-  padding: 4em;
-  width: 400px;
-  height: 540px;
+  padding: 0.5em 4em 0.5em 4em ;
+  width: 420px;
+  height: 530px;
   text-align: center;
   background: #9dd8e0;
   position: fixed;
@@ -335,7 +322,7 @@ input, textarea {
 textarea { height: 80px; resize: none; }
 
 .formBtn {
-  width: 120px;
+  width: 100px;
   display: inline-block;
   background: white;
   color: #76c9d4;
