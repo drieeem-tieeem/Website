@@ -205,7 +205,7 @@ p.timelabel {
   left: 2.5%;
   width: 95%;
   height: 25.5%;
-  position: fixed;
+  position: relative; /* was fixed */
   top: 27vh;
   background-color: powderblue;
 }
@@ -237,8 +237,8 @@ p.timelabel {
   left: 2.5%;
   width: 95%;
   height: 10%;
-  position: fixed;
-  top: 73vh;
+  position: relative; /* was fixed */
+  top: 40vh;
   background-color: powderblue;
 }
 
@@ -258,9 +258,9 @@ p.timelabel {
 /* new pill popup */
 
 .newpill {
-  top: 65vh;
-  left: 90%;
-  position: fixed;
+  right: 5vh;
+  top: 30vh;
+  position: relative;
 }
 
 #contactForm body {
@@ -298,7 +298,7 @@ p.timelabel {
 
   padding: 0.5em 4em 0.5em 4em ;
   width: 420px;
-  height: 530px;
+  height: 460px;
   text-align: center;
   background: #9dd8e0;
   position: fixed;
